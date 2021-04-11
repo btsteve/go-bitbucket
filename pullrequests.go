@@ -137,6 +137,11 @@ func (p *PullRequests) GetComment(po *PullRequestsOptions) (interface{}, error) 
 	return p.c.execute("GET", urlStr, "")
 }
 
+func (p *PullRequests) PostComment(po *PullRequestsOptions) (interface{}, error) {
+	urlStr := p.c.GetApiBaseURL() + "/repositories/" + po.Owner + "/" + po.RepoSlug + "/pullrequests/" + po.ID + "/comments/"
+	return p.c.execute("POST", urlStr, "")
+}
+
 func (p *PullRequests) Statuses(po *PullRequestsOptions) (interface{}, error) {
 	urlStr := p.c.GetApiBaseURL() + "/repositories/" + po.Owner + "/" + po.RepoSlug + "/pullrequests/" + po.ID + "/statuses"
 	if po.Query != "" {

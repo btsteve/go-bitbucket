@@ -1,7 +1,7 @@
 # go-bitbucket
 
-<a class="repo-badge" href="https://godoc.org/github.com/ktrysmt/go-bitbucket"><img src="https://godoc.org/github.com/ktrysmt/go-bitbucket?status.svg" alt="go-bitbucket?status"></a>
-<a href="https://goreportcard.com/report/github.com/ktrysmt/go-bitbucket"><img class="badge" tag="github.com/ktrysmt/go-bitbucket" src="https://goreportcard.com/badge/github.com/ktrysmt/go-bitbucket"></a>
+<a class="repo-badge" href="https://godoc.org/github.com/btsteve/go-bitbucket"><img src="https://godoc.org/github.com/btsteve/go-bitbucket?status.svg" alt="go-bitbucket?status"></a>
+<a href="https://goreportcard.com/report/github.com/btsteve/go-bitbucket"><img class="badge" tag="github.com/btsteve/go-bitbucket" src="https://goreportcard.com/badge/github.com/btsteve/go-bitbucket"></a>
 
 > Bitbucket-API library for golang.
 
@@ -15,7 +15,7 @@ And the response type is json format defined Bitbucket API.
 ## Install
 
 ```sh
-go get github.com/ktrysmt/go-bitbucket
+go get github.com/btsteve/go-bitbucket
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ package main
 import (
         "fmt"
 
-        "github.com/ktrysmt/go-bitbucket"
+        "github.com/btsteve/go-bitbucket"
 )
 
 func main() {
@@ -99,4 +99,4 @@ go test -v ./tests/diff_test.go
 
 ## Author
 
-[ktrysmt](https://github.com/ktrysmt)
+[btsteve](https://github.com/btsteve)
